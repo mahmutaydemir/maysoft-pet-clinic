@@ -2,9 +2,11 @@ package maysoft.springframework.maysoftpetclinic.services.map;
 
 import maysoft.springframework.maysoftpetclinic.model.Pet;
 import maysoft.springframework.maysoftpetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
