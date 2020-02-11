@@ -1,12 +1,11 @@
 package maysoft.springframework.maysoftpetclinic.services.map;
 
-
 import maysoft.springframework.maysoftpetclinic.model.Vet;
-import maysoft.springframework.maysoftpetclinic.services.CrudService;
+import maysoft.springframework.maysoftpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
