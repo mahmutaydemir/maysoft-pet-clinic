@@ -1,12 +1,12 @@
 package maysoft.springframework.maysoftpetclinic.services.map;
 
 import maysoft.springframework.maysoftpetclinic.model.Speciality;
-import maysoft.springframework.maysoftpetclinic.services.SpecialitiesService;
+import maysoft.springframework.maysoftpetclinic.services.SpecialityService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 @Service
-public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialitiesService {
+public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialityService {
     @Override
     public Set<Speciality> findAll() {
         return super.findAll();
