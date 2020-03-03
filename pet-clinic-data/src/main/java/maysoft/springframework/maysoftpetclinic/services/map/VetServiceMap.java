@@ -1,6 +1,6 @@
 package maysoft.springframework.maysoftpetclinic.services.map;
 
-import maysoft.springframework.maysoftpetclinic.model.Speciality;
+import maysoft.springframework.maysoftpetclinic.model.Specialty;
 import maysoft.springframework.maysoftpetclinic.model.Vet;
 import maysoft.springframework.maysoftpetclinic.services.SpecialityService;
 import maysoft.springframework.maysoftpetclinic.services.VetService;
@@ -32,8 +32,8 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
         if(object.getSpecialities().size() > 0){
             object.getSpecialities().forEach(speciality -> {
                 if(speciality.getId() == null){
-                    Speciality savedSpeciality = specialityService.save(speciality);
-                    speciality.setId(savedSpeciality.getId());
+                    Specialty savedSpecialty = specialityService.save(speciality);
+                    speciality.setId(savedSpecialty.getId());
                 }
             });
         }
