@@ -15,7 +15,7 @@ public class OwnerController {
         this.ownerService = ownerService;
     }
 
-    //@RequestMapping({"/owners", "/owners/index","/owners/index.html"})    // slas lardan onceki yazilan owners lari yukari alabilirim.
+    //@RequestMapping({"/owners", "/owners/index","/owners/index.html"})    // clas lardan onceki yazilan owners lari yukari alabilirim.
     @RequestMapping({"", "/", "/index", "/index.html"})
     // yukardakinden farkli olarak bas tarafa bos bir tirnak ekleniyor ekstra.
     public String listOwners(Model model) {
